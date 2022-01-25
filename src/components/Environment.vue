@@ -20,9 +20,9 @@
         <span class="description">戶外休閒區</span>
       </div>
       <div class="pic_set">
-        <img src="./../assets/environment/environment_outdoor1.png" />
-        <img src="./../assets/environment/environment_indoor3.png" />
-        <img src="./../assets/environment/environment_outdoor3.png" />
+        <img src="./../assets/environment/environment_outdoor1.jpg" />
+        <img src="./../assets/environment/environment_indoor3.jpg" />
+        <img src="./../assets/environment/environment_outdoor3.jpg" />
       </div>
       <div class="content">
         <p>房舍外有步道，周圍有種植花草，供住民平時活動、日光浴，慢活樂趣。</p>
@@ -38,8 +38,8 @@
       <div class="indoor_content">
         <div class="indoor_column">
           <div class="indoor_pic_set">
-            <img src="./../assets/environment/environment_indoor2.png" />
-            <img src="./../assets/environment/environment_indoor10.png" />
+            <img src="./../assets/environment/environment_indoor2.jpg" />
+            <img src="./../assets/environment/environment_indoor10.jpg" />
           </div>
           <div class="indoor_text">
             <div class="title">休閒交誼廳</div>
@@ -49,8 +49,8 @@
         </div>
         <div class="indoor_column">
           <div class="indoor_pic_set">
-            <img src="./../assets/environment/environment_119_1.png" />
-            <img src="./../assets/environment/environment_119_2.png" />
+            <img src="./../assets/environment/environment_119_1.jpg" />
+            <img src="./../assets/environment/environment_119_2.jpg" />
           </div>
           <div class="indoor_text">
             <div class="title">消防疏散避難系統</div>
@@ -60,8 +60,8 @@
         </div>
         <div class="indoor_column">
           <div class="indoor_pic_set">
-            <img src="./../assets/environment/environment_bathroom2.png" />
-            <img src="./../assets/environment/environment_bathroom1.png" />
+            <img src="./../assets/environment/environment_bathroom2.jpg" />
+            <img src="./../assets/environment/environment_bathroom1.jpg" />
           </div>
           <div class="indoor_text">
             <div class="title">護理服務設施－盥洗區</div>
@@ -79,9 +79,9 @@
         <span class="description">寢室環境</span>
       </div>
       <div class="pic_set">
-        <img src="./../assets/environment/environment_indoor9.png" />
-        <img src="./../assets/environment/environment_indoor7.png" />
-        <img src="./../assets/environment/environment_bed.png" />
+        <img src="./../assets/environment/environment_indoor9.jpg" />
+        <img src="./../assets/environment/environment_indoor7.jpg" />
+        <img src="./../assets/environment/environment_bed.jpg" />
       </div>
       <div class="content">
         <p>寢室格局有雙人房、六人房，皆有獨立廁所、冷氣，配備床、床旁桌、頭燈、圍簾，以及個人獨立衣櫥，收納空間相當充足。</p>
@@ -115,7 +115,7 @@ export default {
 .all .left {
   width: 50%;
   height: 100%;
-  background-image: url('../assets/environment/environment_door2.png');
+  background-image: url('../assets/environment/environment_door2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -10px;

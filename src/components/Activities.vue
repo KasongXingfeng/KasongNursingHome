@@ -8,7 +8,7 @@
     <div class="activities_content">
       <div class="card" v-for="item in data.slice((nowPage - 1)*6,(nowPage - 1)*6 + 6)" :key="item">
         <div>
-          <img class="picture" v-bind:src="require('./../assets/activity/' + item.picture + '.png')" />
+          <img class="picture" v-bind:src="require('./../assets/activity/' + item.picture + '.jpg')" />
         </div>
         <div class="title">{{item.title}}</div>
         <div class="line"></div>
