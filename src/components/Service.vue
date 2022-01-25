@@ -26,7 +26,7 @@
       <div class="columns" id="app">
         <div class="column" v-for="item in client" :key="item">
           <span class="client_circle">
-            <img style="width:32px" src="./../assets/img/carbon_airline-passenger-care.svg">
+            <img src="./../assets/img/carbon_airline-passenger-care.svg">
           </span>
           <span class="description">{{ item.content }}</span>
         </div>
@@ -279,6 +279,9 @@ export default {
   line-height: 100%;
   color: #805800;
 }
+.client_content .client_circle img{
+    width: 32px;
+}
 @media only screen and (max-width: 1440px) {
   .client .client_top {
       width: 75%;
@@ -322,7 +325,13 @@ export default {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* .wrapper .service_top {
+  .client_content {
+    width: 90%;
+  }
+  .charges_content {
+    width: 90%;
+  }
+  .wrapper .service_top {
     flex-direction: column;
   }
   .wrapper .service_top .left {
@@ -330,6 +339,31 @@ export default {
   }
   .wrapper .service_top .right {
     width: 100%;
-  } */
+    padding: 32px 24px;
+  }
+.client_content .client_circle {
+    width: 30px;
+    height: 30px;
+  }
+.client_content .client_circle img{
+    width: 20px;
+  }
+.client_content .columns {
+    row-gap: 20px;
+  }
+}
+  @media only screen and (max-width: 480px) {
+  .charges_content .box_inside {
+    width: 80%;
+  }
+  .client_content .description {
+    font-size: 12px;
+  }
+  .topic_title {
+    font-size: 30px;
+  }
+  .topic_eng {
+    font-size: 20px;
+  }
 }
 </style>

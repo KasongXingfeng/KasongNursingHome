@@ -59,4 +59,12 @@ export default {
   margin-bottom: 84px;
   width: 90%;
 }
+@media screen and (max-width: 480px) {
+  .topic_title {
+    font-size: 30px;
+  }
+  .topic_eng {
+    font-size: 20px;
+  }
+}
 </style>
