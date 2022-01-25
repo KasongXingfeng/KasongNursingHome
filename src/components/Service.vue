@@ -2,9 +2,9 @@
   <section class="wrapper">
     <div v-for="(item,index) in introduction" :key="item">
       <div class="service_top" v-if="index==nowPic">
-        <!-- <div class="left" style="background-image: url('./../activity/activity_birthday.png');"> -->
+        <!-- <div class="left" style="background-image: url('./../activity/activity_birthday.jpg');"> -->
         <div class="left">
-          <img class="picture" v-bind:src="require('./../assets/service/' + item.picture + '.png')" />
+          <img class="picture" v-bind:src="require('./../assets/service/' + item.picture + '.jpg')" />
         </div>
         <div class="right">
           <div></div>
