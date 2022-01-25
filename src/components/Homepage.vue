@@ -217,16 +217,21 @@ export default {
   line-height: 21px;
   color: #2C2C2C;
 }
+.conclusion .conclusion_content p{
+  color: #2c2c2c;
+  font-size: 18px;
+  line-height: 21px;
+}
 @media screen and (max-width: 1440px){
   .all .concept .concept_top {
-    width: 75%;
+    width: 80%;
   }
   .all .objectives .objectives_top {
-    width: 75%;
+    width: 80%;
     margin: 102px 50px;
   }
   .all .objectives_content {
-    width: 75%;
+    width: 80%;
   }
   .conclusion .conclusion_content {
     width: 70%;
@@ -254,7 +259,7 @@ export default {
     margin: 60px 50px;
   }
   .all .objectives_content .description {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 30px;
   }
   .conclusion .conclusion_content {
@@ -279,6 +284,9 @@ export default {
   }
 }
 @media screen and (max-width: 768px){
+  .all .cover .subtitle {
+    font-size: 16px;
+  }
   .all .objectives_content {
     width: 90%;
   }
@@ -293,6 +301,30 @@ export default {
   .all .objectives_content .index {
     line-height: 30px;
     font-size: 18px
+  }
+
+  .conclusion .conclusion_content {
+    padding: 20px;
+  }
+  .conclusion {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .all .cover .title {
+    font-size: 36px;
+  }
+  .all .objectives_content .description {
+    font-size: 12px;
+  }
+  .conclusion .conclusion_content p {
+    font-size: 12px;
+  }
+  .topic_title {
+    font-size: 30px;
+  }
+  .topic_eng {
+    font-size: 20px;
   }
 }
 </style>

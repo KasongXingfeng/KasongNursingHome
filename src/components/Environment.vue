@@ -118,7 +118,7 @@ export default {
   background-image: url('../assets/environment/environment_door2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0 -10px;
   background-color: #eee;
 }
 .all .right {
@@ -272,6 +272,7 @@ export default {
   }
   .all .right .right_inside p {
     font-size: 14px;
+    margin-top: 12px;
   }
   .tag {
     width: 100%;
