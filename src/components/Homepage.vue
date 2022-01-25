@@ -309,6 +309,9 @@ export default {
   .conclusion {
     margin-bottom: 48px;
   }
+  .conclusion .conclusion_content p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 480px) {
   .all .cover .title {
