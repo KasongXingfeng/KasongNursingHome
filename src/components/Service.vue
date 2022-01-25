@@ -1,5 +1,5 @@
 <template>
-  <section class="wrapper">
+  <section>
     <div v-for="(item,index) in introduction" :key="item">
       <div class="service_top" v-if="index==nowPic">
         <!-- <div class="left" style="background-image: url('./../activity/activity_birthday.jpg');"> -->
@@ -60,6 +60,7 @@
 
 <script>
 import dataset from '../assets/data.json'
+import { setInterval } from 'timers'
 const introduction = dataset.services
 const client = dataset.client
 const charges = dataset.charges
@@ -71,8 +72,20 @@ export default {
       client: client,
       charges: charges,
       introduction: introduction,
-      nowPic: nowPic
+      nowPic: nowPic,
+      timer: 0
     }
+  },
+  created () {
+    this.timer = setInterval(() => {
+      if (this.nowPic >= 8) {
+        this.nowPic = 0
+      } else {
+        console.log(this.nowPic)
+        this.nowPic += 1
+      }
+      // 定時器的回撥函式中需要注意 this 指向
+    }, 5000)
   },
   methods: {
     selectPic: function (index) {
@@ -86,27 +99,20 @@ export default {
 
 </script>
 <style scoped>
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* height: 1000px; */
-  width: 100%;
-}
-.wrapper .service_top {
+.service_top {
   width: 100%;
   display: flex;
 }
-.wrapper .service_top .left {
+.service_top .left {
   width: 50%;
-  height: 100%;
+  height: 600px;
   background-color: #eee;
 }
-.wrapper .service_top .left .picture {
-  height: auto;
+.service_top .left .picture {
+  height: 100%;
   width: 100%;
 }
-.wrapper .service_top .right {
+.service_top .right {
   width: 50%;
   height: auto;
   background-color: #f0fcea;
@@ -114,18 +120,18 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  /* padding: 10px; */
 }
-.wrapper .service_top .right .title {
+.service_top .right .title {
   font-size: 25px;
   line-height: 28px;
   color: #2C2C2C;
 }
-.wrapper .service_top .right .dots {
+.service_top .right .dots {
   display: flex;
   column-gap: 12px;
 }
-.wrapper .service_top .right .dot {
+.service_top .right .dot {
   border-radius: 50%;
   width: 12px;
   height: 12px;
@@ -298,9 +304,13 @@ export default {
   .charges_content .box_inside{
     width: 75%;
   }
+  .service_top .left {
+    width: 50%;
+    height: 700px;
+  }
 }
 @media only screen and (max-width: 1024px) {
-  .wrapper .service_top .right .title {
+  .service_top .right .title {
     font-size: 12px;
   }
   .client_content .columns {
@@ -331,25 +341,26 @@ export default {
   .charges_content {
     width: 90%;
   }
-  .wrapper .service_top {
+  .service_top {
     flex-direction: column;
   }
-  .wrapper .service_top .left {
-    width: 100%;
-  }
-  .wrapper .service_top .right {
+  .service_top .right {
     width: 100%;
     padding: 32px 24px;
   }
-.client_content .client_circle {
+  .client_content .client_circle {
     width: 30px;
     height: 30px;
   }
-.client_content .client_circle img{
+  .client_content .client_circle img{
     width: 20px;
   }
-.client_content .columns {
+  .client_content .columns {
     row-gap: 20px;
+  }
+  .service_top .left {
+    width: 100%;
+    height: 450px;
   }
 }
   @media only screen and (max-width: 480px) {
@@ -364,6 +375,10 @@ export default {
   }
   .topic_eng {
     font-size: 20px;
+  }
+  .service_top .left {
+    width: 100%;
+    height: 350px;
   }
 }
 </style>
