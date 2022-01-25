@@ -16,7 +16,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../components/Mainpage.vue'),
     children: [
       {
-        path: '/homepage',
+        path: '/',
         name: 'homepage',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route

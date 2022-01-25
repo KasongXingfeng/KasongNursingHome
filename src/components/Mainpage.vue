@@ -1,6 +1,6 @@
 <template>
   <div class="navbar" v-on:click="closeNav">
-    <router-link to="/homepage">
+    <router-link to="/" style="display: flex; justify-content: flex-start;">
       <img class="picture" src="./../assets/image2.png">
     </router-link>
     <div class="links">
@@ -96,7 +96,7 @@ export default {
   background-color: #cae9be;
 }
 .navbar .picture {
-  margin: 22px 32px;
+  margin: 22px 6%;
 }
 .navbar .links{
   display: flex;

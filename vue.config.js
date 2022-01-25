@@ -3,4 +3,11 @@
 module.exports = {
     // publicPath 為 project-name，根目錄地址為上傳的網域
     publicPath: '/KasongNursingHome/',
+    devServer:{
+        public:'140.113.73.54:8080/KasongNursingHome/',
+        port: 8080,
+        https: false,
+        disableHostCheck: true,
+        open: false
+    }
 };
