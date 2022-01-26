@@ -14,7 +14,7 @@
     </div>
   </div>
   <div class="links_md" v-on:click="openNav" v-if="!sidebarOpen">
-    <img src="./../assets/img/Menu.svg">
+    <img style="height:42px" src="./../assets/img/Menu.png">
   </div>
   <div id="mySidenav" class="sidenav" v-if="sidebarOpen">
     <div class="close">
@@ -37,14 +37,14 @@
           <div class="right" >
             <div v-for="item in data" :key="item" class="column">
               <span>
-                <img v-bind:src="require('./../assets/img/' + item.picture + '.svg')" />
+                <img v-bind:src="require('./../assets/img/' + item.picture + '.png')" />
               </span>
               <span class="content">{{item.content}}</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="privacy"> © 2022 青松健康事業. All Rights Reserved.</div>
+      <div class="privacy"> © 2022 佳松護理之家. All Rights Reserved.</div>
     </div>
 </template>
 <script>
@@ -181,6 +181,9 @@ export default {
   column-gap: 12px;
   align-items: center;
   justify-content: flex-start;
+}
+.footer .right .column img{
+  width: 20px;
 }
 .footer .right .column .content{
   color: #29471C;

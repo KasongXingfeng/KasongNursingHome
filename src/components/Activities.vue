@@ -15,9 +15,9 @@
       </div>
     </div>
     <div class="pagination">
-      <img style="padding-right: 28px" src="./../assets/img/Back.svg" v-on:click="prev"/>
+      <img style="padding-right: 18px; height: 20px" src="./../assets/img/Back.png" v-on:click="prev"/>
       <span class="page" v-for="(page,index) in totalPage" :key="index+1" v-bind:class="[nowPage==index+1?'selected':'unselected']" v-on:click="selectedPage(index+1)">{{index + 1}}</span>
-      <img style="padding-left: 28px" src="./../assets/img/Forward.svg" v-on:click="next"/>
+      <img style="padding-left: 18px; height: 20px" src="./../assets/img/Forward.png" v-on:click="next"/>
     </div>
   </div>
 </template>
@@ -115,7 +115,7 @@ export default {
 .activities_content .card .picture{
   width: 90%;
   height: 90%;
-  /* background-color: #ddd; */
+  background-color: #ddd;
 }
 .activities_content .card .title{
   font-size: 24px;
@@ -183,9 +183,6 @@ export default {
   }
 }
 @media only screen and (max-width: 480px) {
-  .activities .activities_top {
-    /* margin: ; */
-  }
   .activities_content .card{
     width: 100%;
   }
