@@ -2,7 +2,7 @@
   <section>
     <div v-for="(item,index) in introduction" :key="item">
       <div class="service_top" v-if="index==nowPic">
-        <!-- <div class="left" style="background-image: url('./../activity/activity_birthday.jpg');"> -->
+        <!-- <div class="left" v-bind:style="{'backgroundImage':'url('+item.picture+')'}"> -->
         <div class="left">
           <img class="picture" v-bind:src="require('./../assets/service/' + item.picture + '.jpg')" />
         </div>
@@ -114,6 +114,7 @@ export default {
 }
 .service_top .right {
   width: 50%;
+  padding: 0 1%;
   height: auto;
   background-color: #f0fcea;
   display: flex;
@@ -130,6 +131,7 @@ export default {
 .service_top .right .dots {
   display: flex;
   column-gap: 12px;
+  margin-bottom: 30px;
 }
 .service_top .right .dot {
   border-radius: 50%;

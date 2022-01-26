@@ -107,7 +107,6 @@ export default {
 </script>
 <style scoped>
 .all .top {
-  margin-top: 5px;
   display: flex;
   width: 100%;
   height: 480px;
