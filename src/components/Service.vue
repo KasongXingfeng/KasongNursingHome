@@ -4,7 +4,7 @@
       <div class="service_top" v-if="index==nowPic">
         <!-- <div class="left" v-bind:style="{'backgroundImage':'url('+item.picture+')'}"> -->
         <div class="left">
-          <img class="picture" v-bind:src="require('./../assets/service/' + item.picture + '.jpg')" />
+          <img class="picture" v-bind:src="require('../assets/service/' + item.picture + '.jpg')" />
         </div>
         <div class="right">
           <div></div>
@@ -334,6 +334,9 @@ export default {
   }
   .charges_content .box_inside .detail .detail_price {
     font-size: 16px;
+  }
+  .service_top .left {
+    height: 500px;
   }
 }
 @media only screen and (max-width: 768px) {

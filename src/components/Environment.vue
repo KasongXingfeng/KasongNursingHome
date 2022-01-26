@@ -6,7 +6,7 @@
       <div class="right">
         <div class="right_inside">
           <div class="topic_title">環境介紹</div>
-          <div class="topic_eng">Service</div>
+          <div class="topic_eng">Environment</div>
           <div class="title_line"></div>
           <p>位於南陽路鄰近豐原大道，交通便利，有廣大的前庭位置，停車方便。</p>
         </div>

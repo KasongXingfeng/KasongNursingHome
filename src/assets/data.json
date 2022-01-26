@@ -200,30 +200,30 @@
   ],"services":[
   {
   "title":"24小時皆有護理師、照服員輪班，專業的照顧方式，讓家屬安心！",
-  "picture":"./../assets/service/service_image1.jpg"
+  "picture":"service_image1"
   },{
   "title":"24小時皆有護理師、照服員輪班，專業的照顧方式，讓家屬安心！",
-  "picture":"./../assets/service/service_image2.jpg"
+  "picture":"service_image2"
   },{
   "title":"定期醫師巡診、外出復健，隨時掌握住民的健康與活動力。",
-  "picture":"./../assets/service/service_image3.jpg"
+  "picture":"service_image3"
   },{
   "title":"定期醫師巡診、外出復健，隨時掌握住民的健康與活動力。",
-  "picture":"./../assets/service/service_image4.jpg"
+  "picture":"service_image4"
   },{
   "title":"定期醫師巡診、外出復健，隨時掌握住民的健康與活動力。",
-  "picture":"./../assets/service/service_image5.jpg"
+  "picture":"service_image5"
   },{
   "title":"定期醫師巡診、外出復健，隨時掌握住民的健康與活動力。",
-  "picture":"./../assets/service/service_image6.jpg"
+  "picture":"service_image6"
   },{
   "title":"藥師、營養師、社工定期召開會議，針對個案討論照護方法；平時透過教育訓練增加員工知識技能。",
-  "picture":"./../assets/service/service_image7.jpg"
+  "picture":"service_image7"
   },{
   "title":"藥師、營養師、社工定期召開會議，針對個案討論照護方法；平時透過教育訓練增加員工知識技能。",
-  "picture":"./../assets/service/service_image8.jpg"
+  "picture":"service_image8"
   },{
   "title":"藥師、營養師、社工定期召開會議，針對個案討論照護方法；平時透過教育訓練增加員工知識技能。",
-  "picture":"./../assets/service/service_image9.jpg"
+  "picture":"service_image9"
   }
   ]}

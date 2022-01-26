@@ -2,7 +2,7 @@
   <div class="activities">
     <div class="activities_top">
       <div class="topic_title">活動花絮</div>
-      <div class="topic_eng">activities</div>
+      <div class="topic_eng">Activity</div>
       <div class="title_line"></div>
     </div>
     <div class="activities_content">
