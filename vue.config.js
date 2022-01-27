@@ -3,22 +3,11 @@
 module.exports = {
     // publicPath 為 project-name，根目錄地址為上傳的網域
     publicPath: '/KasongNursingHome/',
-    pluginOptions: {
-        sitemap: {
-            urls: [
-                'https://kenchen879.github.io/KasongNursingHome/',
-                'https://kenchen879.github.io/KasongNursingHome/orginazation',
-                'https://kenchen879.github.io/KasongNursingHome/service',
-                'https://kenchen879.github.io/KasongNursingHome/environment',
-                'https://kenchen879.github.io/KasongNursingHome/activities'
-            ]
-        }
+    devServer:{
+        public:'140.113.73.54:8080/KasongNursingHome/',
+        port: 8080,
+        https: false,
+        disableHostCheck: true,
+        open: false
     }
-    // devServer:{
-    //     public:'140.113.73.54:8080/KasongNursingHome/',
-    //     port: 8080,
-    //     https: false,
-    //     disableHostCheck: true,
-    //     open: false
-    // }
 };
